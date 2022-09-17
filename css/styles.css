@@ -12,7 +12,7 @@
   --cards-border-color: #eeeeee;
   --header-border-bottom: #ececec;
   --active-button: #188ce8;
-  --icon-border: #AFB1B8;
+  --icon-border: #afb1b8;
 
   /* Effects */
   --hover-focus-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,7 +116,7 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: color var(--hover-focus-transition)
+  transition: color var(--hover-focus-transition);
 }
 
 .nav .link-current {
@@ -180,7 +180,8 @@ p {
   margin-right: auto;
   height: 600px;
   background-color: var(--secondary-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -302,7 +303,7 @@ p {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
@@ -385,7 +386,7 @@ p {
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
-  line-height: calc(42/36);
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -401,8 +402,7 @@ p {
   color: var(--icon-border);
   border: 1px solid var(--icon-border);
   border-radius: 4px;
-  transition: color var(--hover-focus-transition),
-    border-color var(--hover-focus-transition);
+  transition: color var(--hover-focus-transition), border-color var(--hover-focus-transition);
 }
 
 .clients .link:hover,
@@ -411,11 +411,9 @@ p {
   border-color: var(--accent-color);
 }
 
-
 .client-logo {
   fill: currentColor;
 }
-
 
 /* footer */
 
@@ -477,7 +475,7 @@ p {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
 }
@@ -501,7 +499,7 @@ p {
 
 .subscribe input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
   letter-spacing: 0.03em;
 }
 
@@ -517,7 +515,7 @@ p {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--tertiary-text-color);
   cursor: pointer;
@@ -538,7 +536,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
 }
@@ -556,8 +554,7 @@ p {
   border-radius: 50%;
   fill: var(--primary-background-color);
   background: rgba(255, 255, 255, 0.1);
-  transition: fill var(--hover-focus-transition),
-    background-color var(--hover-focus-transition);
+  transition: fill var(--hover-focus-transition), background-color var(--hover-focus-transition);
 }
 
 .follow-link:hover,
@@ -565,7 +562,6 @@ p {
   fill: var(--primary-background-color);
   background-color: var(--accent-color);
 }
-
 
 /* portfolio */
 
@@ -588,8 +584,7 @@ p {
   border: none;
   border-radius: 4px;
 
-  transition: color var(--hover-focus-transition),
-    background-color var(--hover-focus-transition),
+  transition: color var(--hover-focus-transition), background-color var(--hover-focus-transition),
     box-shadow var(--hover-focus-transition);
 }
 
@@ -601,9 +596,7 @@ p {
 .filter .button:focus {
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
-  box-shadow:
-    0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
@@ -636,9 +629,7 @@ p {
 
 .portfolio-list .item:hover,
 .portfolio-list .item:focus {
-  box-shadow:
-    0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -666,7 +657,7 @@ p {
   padding: 24px;
   color: var(--tertiary-text-color);
   font-size: 18px;
-  line-height: calc(28/18);
+  line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   transition: transform var(--hover-focus-transition);
 }
@@ -720,7 +711,8 @@ p {
   padding: 40px;
   background-color: var(--primary-background-color);
   transition: transform var(--hover-focus-transition);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -765,7 +757,7 @@ p {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23/20);
+  line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -783,7 +775,7 @@ p {
 }
 
 .input {
-position: relative;
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -831,9 +823,7 @@ textarea {
 .checkbox-icon {
   margin-right: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: border var(--hover-focus-transition), 
-  background-color var(--hover-focus-transition), 
-  background-image var(--hover-focus-transition);
+  transition: opacity var(--hover-focus-transition);
 }
 
 .checked {
@@ -853,15 +843,15 @@ textarea {
 }
 
 .checkbox:focus + .checkbox-icon {
-outline: 2px solid var(--accent-color);
-outline-offset: 1px
+  outline: 2px solid var(--accent-color);
+  outline-offset: 1px;
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
   user-select: none;
-  line-height: calc(24/14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
@@ -879,7 +869,7 @@ outline-offset: 1px
   padding: 10px 52px;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
   background-color: var(--accent-color);
