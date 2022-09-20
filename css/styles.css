@@ -181,7 +181,7 @@ p {
 
 /* hero */
 
-.hero {
+.hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -195,7 +195,7 @@ p {
   text-align: center;
 }
 
-.hero__title {
+.hero-section__title {
   display: block;
   max-width: 696px;
   margin-left: auto;
@@ -210,7 +210,7 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.hero__button {
+.hero-section__button {
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -226,18 +226,18 @@ p {
   transition: background-color var(--hover-focus-transition);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero-section__button:hover,
+.hero-section__button:focus {
   background-color: var(--active-button);
 }
 
 /* features */
 
-.features__section {
+.features-section {
   padding-bottom: 0px;
 }
 
-.features__title {
+.features-section__title {
   /* hidden */
   position: absolute;
   width: 1px;
@@ -245,7 +245,6 @@ p {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -257,24 +256,24 @@ p {
   gap: 30px;
 }
 
-.features-cardset__item {
+.features-cardset__card {
   width: calc((100% - 90px) / 4);
 }
 
-.features-cardset__thumb {
+.features-cardset__card-thumb {
   background-color: var(--tertiary-background-color);
   padding: 25px 100px;
   margin-bottom: 30px;
 }
 
-.features-cardset__title {
+.features-cardset__card-title {
   font-weight: 700;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.features-cardset__text {
+.features-cardset__card-text {
   margin-top: 10px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -283,7 +282,7 @@ p {
 
 /* work */
 
-.work-title {
+.work-section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -292,17 +291,17 @@ p {
   letter-spacing: 0.03em;
 }
 
-.work .list {
+.work-cardset {
   display: flex;
   gap: 30px;
 }
 
-.work .item {
+.work-cardset__card {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.work .description {
+.work-cardset__card-description {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -320,11 +319,11 @@ p {
 
 /* team */
 
-.team {
+.team-section {
   background-color: var(--tertiary-background-color);
 }
 
-.team-title {
+.team-section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -333,12 +332,12 @@ p {
   letter-spacing: 0.03em;
 }
 
-.team .list {
+.team-cardset {
   display: flex;
   gap: 30px;
 }
 
-.team .item {
+.team-cardset__card {
   flex-basis: calc((100% - 90px) / 4);
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
@@ -346,11 +345,11 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-card {
+.team-cardset__card-thumb {
   padding: 30px 32px;
 }
 
-.team .title {
+.team-cardset__card-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -359,7 +358,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-.team .text {
+.team-cardset__card-text {
   margin-bottom: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -367,12 +366,12 @@ p {
   color: var(--secondary-text-color);
 }
 
-.social-list {
+.socials {
   display: flex;
   gap: 10px;
 }
 
-.social-link {
+.socials__link {
   display: block;
   padding: 12px;
   width: 44px;
@@ -382,8 +381,8 @@ p {
   transition: background-color var(--hover-focus-transition), fill var(--hover-focus-transition);
 }
 
-.social-link:hover,
-.social-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   fill: var(--primary-background-color);
   background-color: var(--accent-color);
 }
