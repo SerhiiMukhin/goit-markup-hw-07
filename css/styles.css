@@ -88,7 +88,6 @@ p {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
-  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -437,7 +436,7 @@ p {
   align-items: baseline;
 }
 
-.footer .logo {
+.logo--light-theme {
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -446,7 +445,7 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.footer .location {
+.address-list__location {
   margin-top: 0px;
   margin-bottom: 9px;
   text-decoration: none;
@@ -456,11 +455,11 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.footer .item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer .link {
+.address-list__link {
   font-style: normal;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -468,8 +467,8 @@ p {
   transition: color var(--hover-focus-transition);
 }
 
-.footer .link:hover,
-.footer .link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -477,7 +476,7 @@ p {
   margin-left: 93px;
 }
 
-.subscribe label {
+.subscribe__label {
   display: block;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -487,12 +486,12 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   align-items: center;
 }
 
-.subscribe input {
+.subscribe__input {
   margin-right: 12px;
   padding: 15px 16px;
   width: 350px;
@@ -504,13 +503,13 @@ p {
   caret-color: var(--primary-background-color);
 }
 
-.subscribe input::placeholder {
+.subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
 }
 
-.submit-email {
+.subscribe__submit-button {
   display: flex;
   align-items: center;
   padding: 10px 28px;
@@ -528,7 +527,7 @@ p {
   cursor: pointer;
 }
 
-.subscribe .send {
+.subscribe__icon {
   margin-left: 10px;
 }
 
@@ -538,7 +537,7 @@ p {
   margin-left: 70px;
 }
 
-.follow .title {
+.follow__title {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -548,26 +547,9 @@ p {
   color: var(--primary-background-color);
 }
 
-.follow-list {
-  display: flex;
-  gap: 10px;
-}
-
-.follow-link {
-  display: block;
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.socials__link--dark-theme {
   fill: var(--primary-background-color);
   background: rgba(255, 255, 255, 0.1);
-  transition: fill var(--hover-focus-transition), background-color var(--hover-focus-transition);
-}
-
-.follow-link:hover,
-.follow-link:focus {
-  fill: var(--primary-background-color);
-  background-color: var(--accent-color);
 }
 
 /* portfolio */
