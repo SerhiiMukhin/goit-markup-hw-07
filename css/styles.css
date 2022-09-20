@@ -729,19 +729,6 @@ p {
 
 /* Form */
 
-.form {
-  justify-content: center;
-}
-
-.form label {
-  color: var(--secondary-text-color);
-}
-
-.input-area {
-  display: flex;
-  flex-direction: column;
-}
-
 .form-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -751,37 +738,47 @@ p {
   letter-spacing: 0.03em;
 }
 
-.form label:not(:last-child) {
+.form {
+  justify-content: center;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area__label {
+  color: var(--secondary-text-color);
+}
+
+.input-area__label:not(:last-child) {
   margin-bottom: 4px;
 }
 
-.input-area input {
+.input-field__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  transition: outline var(--hover-focus-transition);
 }
 
-.input {
+.input-field {
   position: relative;
   margin-bottom: 10px;
 }
 
-.input input {
-  transition: outline var(--hover-focus-transition);
-}
-
-.input input:focus,
-textarea:focus {
+.input-field__input:focus,
+.input-area__textarea:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.input input:focus + .icon {
+.input-field__input:focus + .input-field__icon {
   fill: var(--accent-color);
 }
 
-.input .icon {
+.input-field__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -789,7 +786,7 @@ textarea:focus {
   transition: fill var(--hover-focus-transition);
 }
 
-textarea {
+.input-area__textarea {
   margin-bottom: 20px;
   resize: none;
   padding: 12px 16px;
@@ -809,34 +806,34 @@ textarea {
   appearance: none;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   margin-right: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: opacity var(--hover-focus-transition);
 }
 
-.checked {
+.checkbox__checked {
   opacity: 0;
 }
 
-.unchecked {
+.checkbox__unchecked {
   opacity: 1;
 }
 
-.checkbox:checked + .checkbox-icon .checked {
+.checkbox:checked + .checkbox__icon .checkbox__checked {
   opacity: 1;
 }
 
-.checkbox:checked + .checkbox-icon .unchecked {
+.checkbox:checked + .checkbox__icon .checkbox__unchecked {
   opacity: 0;
 }
 
-.checkbox:focus + .checkbox-icon {
+.checkbox:focus + .checkbox__icon {
   outline: 2px solid var(--accent-color);
   outline-offset: 1px;
 }
 
-.checkbox-label {
+.confirm__checkbox-label {
   display: flex;
   align-items: center;
   user-select: none;
@@ -844,12 +841,12 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.form .link {
+.confirm__link {
   text-decoration: underline;
   color: var(--accent-color);
 }
 
-.submit-btn {
+.confirm__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -869,7 +866,7 @@ textarea {
   transition: background-color var(--hover-focus-transition);
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.confirm__button:hover,
+.confirm__button:focus {
   background-color: var(--active-button);
 }
