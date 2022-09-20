@@ -24,6 +24,7 @@ body {
   font-family: 'Roboto', 'Arial', 'Tahoma', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
@@ -260,7 +261,6 @@ p {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .features-section__title {
@@ -293,17 +293,16 @@ p {
   margin-bottom: 30px;
 }
 
-.features-cardset__card-title {
+.title--uppercase {
+  font-size: inherit;
   font-weight: 700;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features-cardset__card-text {
   margin-top: 10px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -321,11 +320,7 @@ p {
   padding: 27px;
   height: 70px;
   width: 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: calc(16 / 14);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -358,14 +353,12 @@ p {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-cardset__card-text {
   margin-bottom: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -455,7 +448,6 @@ p {
   text-decoration: none;
   font-style: normal;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
 }
 
@@ -466,7 +458,6 @@ p {
 .address-list__link {
   font-style: normal;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color-transparency);
   transition: color var(--hover-focus-transition);
 }
@@ -483,10 +474,6 @@ p {
 .subscribe__label {
   display: block;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
 }
 
@@ -510,7 +497,6 @@ p {
 .subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
 }
 
 .subscribe__icon {
@@ -523,11 +509,6 @@ p {
 
 .follow__title {
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   color: var(--primary-background-color);
 }
 
@@ -572,7 +553,6 @@ p {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
 
@@ -629,7 +609,6 @@ p {
   color: var(--tertiary-text-color);
   font-size: 18px;
   line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
   transition: transform var(--hover-focus-transition);
 }
 
@@ -647,7 +626,6 @@ p {
 .portfolio-card__text {
   margin-top: 4px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -717,7 +695,6 @@ p {
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .form {
@@ -789,7 +766,6 @@ p {
   align-items: center;
   user-select: none;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
 
 .checkbox {
