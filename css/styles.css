@@ -13,6 +13,7 @@
   --header-border-bottom: #ececec;
   --active-button: #188ce8;
   --icon-border: #afb1b8;
+  --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   /* Effects */
   --hover-focus-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,24 +210,34 @@ p {
   color: var(--tertiary-text-color);
 }
 
-.hero-section__button {
-  padding: 10px 32px;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 50px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--tertiary-text-color);
+
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+  box-shadow: var(--button-shadow);
   cursor: pointer;
+
   transition: background-color var(--hover-focus-transition);
 }
 
-.hero-section__button:hover,
-.hero-section__button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--active-button);
 }
 
@@ -507,24 +518,6 @@ p {
   color: rgba(255, 255, 255, 0.6);
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
-}
-
-.subscribe__submit-button {
-  display: flex;
-  align-items: center;
-  padding: 10px 28px;
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: var(--tertiary-text-color);
-  cursor: pointer;
 }
 
 .subscribe__icon {
@@ -845,29 +838,4 @@ p {
 .confirm__link {
   text-decoration: underline;
   color: var(--accent-color);
-}
-
-.confirm__button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 50px;
-  padding: 10px 52px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  background-color: var(--accent-color);
-  border: none;
-  color: var(--tertiary-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color var(--hover-focus-transition);
-}
-
-.confirm__button:hover,
-.confirm__button:focus {
-  background-color: var(--active-button);
 }
