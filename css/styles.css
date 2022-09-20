@@ -554,14 +554,29 @@ p {
 
 /* portfolio */
 
-.filter {
+.portfolio-section__title {
+  /* hidden */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-list {
   display: flex;
   list-style: none;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter .button {
+.filter-list__button {
   background-color: var(--tertiary-background-color);
   padding: 6px 22px;
   font-family: inherit;
@@ -577,12 +592,12 @@ p {
     box-shadow var(--hover-focus-transition);
 }
 
-.filter .item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter .button:hover,
-.filter .button:focus {
+.filter-list__button:hover,
+.filter-list__button:focus {
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -590,44 +605,29 @@ p {
   cursor: pointer;
 }
 
-.portfolio-title {
-  /* hidden */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.portfolio-list {
+.portfolio-сardset {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-list .item {
+.portfolio-card {
   flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow var(--hover-focus-transition);
 }
 
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card {
+.portfolio-card__description {
   padding: 20px 24px;
   border: 1px solid var(--cards-border-color);
 }
 
-.portfolio-list .thumb {
+.portfolio-card__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -651,18 +651,18 @@ p {
   transition: transform var(--hover-focus-transition);
 }
 
-.portfolio-list .item:hover .overlay {
+.portfolio-card:hover .overlay {
   transform: translateY(-100%);
 }
 
-.portfolio .title {
+.portfolio-card__title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 
-.portfolio .text {
+.portfolio-card__text {
   margin-top: 4px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
