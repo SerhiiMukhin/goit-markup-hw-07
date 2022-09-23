@@ -27,9 +27,10 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
 }
 
-.close-modal-button:hover,
-.close-modal-button:focus {
-    fill: var(--accent-color);
-}

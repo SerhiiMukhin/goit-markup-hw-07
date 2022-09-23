@@ -35,15 +35,10 @@
     border-radius: 4px;
     cursor: pointer;
     transition: outline var(--hover-focus-transition);
-}
 
-.input-field__input:focus,
-.input-area__textarea:focus {
-    outline: 1px solid var(--accent-color);
-}
-
-.input-field__input:focus+.input-field__icon {
-    fill: var(--accent-color);
+    &:focus, {
+        outline: 1px solid var(--accent-color);
+        }
 }
 
 .input-field__icon {
@@ -52,6 +47,10 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--hover-focus-transition);
+
+    .input-field__input:focus + & {
+            fill: var(--accent-color);
+        }
 }
 
 .input-area__textarea {
@@ -61,6 +60,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
+
+    &:focus {
+        outline: 1px solid var(--accent-color);
+        }
 }
 
 .confirm {

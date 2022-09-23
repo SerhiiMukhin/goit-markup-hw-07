@@ -11,13 +11,15 @@
     outline: 1px solid var(--icon-border);
     border-radius: 4px;
     transition: color var(--hover-focus-transition), border-color var(--hover-focus-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        outline-color: var(--accent-color);
+    }
 }
 
-.clients-list__client-link:hover,
-.clients-list__client-link:focus {
-    color: var(--accent-color);
-    outline-color: var(--accent-color);
-}
+
 
 .clients-list__client-logo {
     fill: currentColor;

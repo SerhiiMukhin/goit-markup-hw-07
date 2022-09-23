@@ -20,9 +20,10 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color var(--hover-focus-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-}

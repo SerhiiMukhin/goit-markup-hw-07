@@ -16,9 +16,8 @@
     line-height: calc(24 / 14);
     color: var(--secondary-text-color-transparency);
     transition: color var(--hover-focus-transition);
-}
 
-.address-list__link:hover,
-.address-list__link:focus {
-    color: var(--accent-color);
-}
+    &:hover,
+    &:focus {
+        color: var(--accent-color);}
+    }
